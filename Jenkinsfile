@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'alpine'
-            args '-u root:root'
-        }
-    }
+    agent any
     stages {
         stage('Test Docker Setup') {
             steps {
