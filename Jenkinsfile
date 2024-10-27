@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     echo 'Testing Docker Setup'
-                    sh 'echo "Docker is running properly inside Jenkins! :)"'
+                    sh 'npm -v'
                 }
             }
         }
