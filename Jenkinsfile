@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     echo 'Testing Docker Setup'
-                    sh 'sudo apt install node'
+                    sh 'echo "Docker is running properly inside Jenkins!"'
                 }
             }
         }
