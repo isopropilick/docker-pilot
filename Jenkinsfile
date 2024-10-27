@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     echo 'Testing Docker Setup'
-                    sh 'apt install node'
+                    sh 'sudo apt install node'
                 }
             }
         }
