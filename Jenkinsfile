@@ -10,7 +10,7 @@ pipeline {
                 script {
                     echo 'Testing Docker Setup'
                     sh 'python3 -m venv ./venv'
-                    sh 'source ./venv/bin/activate'
+                    sh './venv/bin/activate'
                     sh 'pip3 install pandas'
                 }
             }
