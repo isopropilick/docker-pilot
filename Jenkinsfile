@@ -9,7 +9,7 @@ pipeline {
             steps {
                 script {
                     echo 'Testing Docker Setup'
-                    sh 'pip install pandas'
+                    sh 'pip3 install pandas'
                 }
             }
         }
