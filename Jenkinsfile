@@ -9,9 +9,8 @@ pipeline {
             steps {
                 script {
                     echo 'Testing Docker Setup'
-                    sh 'python3 -m venv ./venv'
-                    sh ' . venv/bin/activate'
-                    sh 'pip3 install pandas'
+                    sh 'python -m venv my-venv'
+                    sh 'my-venv/bin/pip install pandas'
                 }
             }
         }
