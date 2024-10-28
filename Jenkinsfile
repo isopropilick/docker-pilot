@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label 'node'
+        }
+    }
     stages {
         stage('Test Docker Setup') {
             steps {
