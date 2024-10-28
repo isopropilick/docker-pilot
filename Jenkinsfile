@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'node'
+            label 'python'
         }
     }
     stages {
@@ -9,7 +9,7 @@ pipeline {
             steps {
                 script {
                     echo 'Testing Docker Setup'
-                    sh 'npm -v'
+                    sh 'pip install pandas'
                 }
             }
         }
